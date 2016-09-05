@@ -2,7 +2,7 @@
 
 ## Install
 
-You can sign up for CoinGate account at https://coingate.com for production and https://sandbox.coingate.com for testing (sandbox) environment.
+Sign up for CoinGate account at https://coingate.com for production and https://sandbox.coingate.com for testing (sandbox) environment.
 
 ### via FTP
 
