@@ -15,7 +15,7 @@ $order_id = $_REQUEST['order_id'];
 $order = $db->Execute("select orders_id from " . TABLE_ORDERS . " where orders_id = '" . intval($order_id) . "' limit 1");
 
 if (!$order || !$order->fields['orders_id'])
-  throw new Exception('Order #' . $order_id . ' does not exists');
+  throw new Exception (strip_tags(('Order #' . $order_id . ' does not exists'));
 
 $coingate_order = \CoinGate\Merchant\Order::findOrFail($_REQUEST['id'], array(), array(
   'app_id' => MODULE_PAYMENT_COINGATE_APP_ID,
